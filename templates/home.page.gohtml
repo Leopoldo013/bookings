@@ -1,0 +1,16 @@
+{{template "base" .}}
+{{define "title"}}Home{{end}}
+{{define "css"}}
+<link rel="stylesheet" href="/static/css/home.css" />
+{{end}}
+{{define "content"}} 
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Esse é o esquema</h1>
+            <p>Esse o para grafo mano</p>
+            <p>{{index .StringMap "test"}}</p>
+        </div>
+    </div>
+  </div> 
+{{end}}
